@@ -1,6 +1,6 @@
 .home {
-  background-color: rebeccapurple;
+  display: flex;
 }
-.home .title {
-  color: white;
+.home .homeContainer {
+  flex: 10;
 }/*# sourceMappingURL=home.css.map */
