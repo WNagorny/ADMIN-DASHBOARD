@@ -19,11 +19,14 @@ const Datatable = () => {
   return (
     <div className='datatable'>
       <DataGrid
-        className="datagrid"
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        initialState={{
+          pagination: {
+            paginationModel: { page: 0, pageSize: 8 },
+          },
+        }}
+        pageSizeOptions={[4, 4]}
         checkboxSelection
       />
     </div>
