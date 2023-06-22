@@ -23,7 +23,7 @@ import Table from '../../components/table/Table'
 
         <div className="charts">
           <Featured/>
-          <Chart/>
+          <Chart aspect={5/1} title="Last 6 months (Revenue)"/>
         </div>
 
         <div className="listContainer">

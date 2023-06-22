@@ -1,0 +1,51 @@
+.datatable {
+  height: 600px;
+  padding: 20px;
+}
+.datatable .cellWithImg {
+  display: flex;
+  align-items: center;
+}
+.datatable .cellWithImg .cellImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 20px;
+}
+.datatable .cellWithStatus {
+  padding: 5px;
+  border-radius: 5px;
+}
+.datatable .cellWithStatus.active {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.212);
+}
+.datatable .cellWithStatus.pending {
+  color: goldenrod;
+  background-color: rgba(189, 189, 3, 0.319);
+}
+.datatable .cellWithStatus.passive {
+  color: crimson;
+  background-color: rgba(255, 0, 0, 0.196);
+}
+.datatable .cellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.datatable .cellAction .viewButton,
+.datatable .cellAction .deleteButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.datatable .cellAction .viewButton {
+  color: darkblue;
+  border: 1px dotted rgba(63, 139, 0, 0.508);
+}
+.datatable .cellAction .deleteButton {
+  color: crimson;
+  border: 1px dotted rgba(220, 20, 60, 0.6);
+}/*# sourceMappingURL=datatable.css.map */

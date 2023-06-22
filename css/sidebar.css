@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   padding: 5px;
+  margin: 18px 0;
   cursor: pointer;
 }
 .sidebar .center ul li:hover {
