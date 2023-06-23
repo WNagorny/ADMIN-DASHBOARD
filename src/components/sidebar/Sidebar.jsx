@@ -1,4 +1,4 @@
-import './sidebar.scss'
+import './_sidebar.scss'
 import DashboardIcon from '@mui/icons-material/Dashboard'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 import StoreIcon from '@mui/icons-material/Store'

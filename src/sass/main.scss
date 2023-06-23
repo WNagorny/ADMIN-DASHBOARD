@@ -1,0 +1,21 @@
+//Components
+
+@import '../components/chart/chart';
+@import '../components/datatable/datatable';
+@import '../components/featured/featured';
+@import '../components/navbar//navbar';
+@import '../components/sidebar/sidebar';
+@import '../components/table/table';
+@import '../components/widgets/widgets';
+
+
+//Pages
+
+@import '../pages/home/home';
+@import '../pages/list/list';
+@import '../pages/new/new';
+@import '../pages/single/single';
+
+//style
+
+@import '../style/dark'

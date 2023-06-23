@@ -1,5 +1,5 @@
 import React from 'react'
-import './single.scss'
+import './_single.scss'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
 import Chart from '../../components/chart/Chart'
@@ -27,34 +27,34 @@ const Single = () => {
 							<div className='details'>
 								<h1 className='itemTitle'>Jane Doe</h1>
 								<div className='detailItem'>
-                  <span className="itemKey">Email:</span>
-                  <span className="itemValue">janedoe@gmail.com</span>
-                </div>
+									<span className='itemKey'>Email:</span>
+									<span className='itemValue'>janedoe@gmail.com</span>
+								</div>
 								<div className='detailItem'>
-                  <span className="itemKey">Phone:</span>
-                  <span className="itemValue">+48 738 527 471</span>
-                </div>
+									<span className='itemKey'>Phone:</span>
+									<span className='itemValue'>+48 738 527 471</span>
+								</div>
 								<div className='detailItem'>
-                  <span className="itemKey">Address:</span>
-                  <span className="itemValue">Rue rasson 1</span>
-                </div>
+									<span className='itemKey'>Address:</span>
+									<span className='itemValue'>Rue rasson 1</span>
+								</div>
 								<div className='detailItem'>
-                  <span className="itemKey">County:</span>
-                  <span className="itemValue">Belgium</span>
-                </div>
+									<span className='itemKey'>County:</span>
+									<span className='itemValue'>Belgium</span>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div className='right'>
-            <Chart aspect={8/1} title="User Spending( Last 6 Months)"/>
-          </div>
+						<Chart aspect={8 / 1} title='User Spending( Last 6 Months)' />
+					</div>
 				</div>
 
 				<div className='bottom'>
-						<h1 className='title'>Last Transactions</h1>
-             <ListTable/>
-        </div>
+					<h1 className='title'>Last Transactions</h1>
+					<ListTable />
+				</div>
 			</div>
 		</div>
 	)
