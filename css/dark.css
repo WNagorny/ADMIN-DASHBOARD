@@ -1,0 +1,52 @@
+.app.dark {
+  background-color: #222;
+  color: rgb(156, 156, 156);
+}
+.app.dark .chartGrid {
+  stroke: rgba(228, 228, 228, 0.122);
+}
+.app.dark .list {
+  background-color: #111;
+}
+.app.dark .list .tableCell {
+  color: rgb(156, 156, 156);
+}
+.app.dark .navbar {
+  color: rgb(156, 156, 156);
+  border-color: #333;
+}
+.app.dark .navbar .search {
+  border-color: rgb(88, 87, 87);
+}
+.app.dark .sidebar {
+  background-color: #111;
+  border-color: #333;
+}
+.app.dark .sidebar .top .logo {
+  color: #999;
+}
+.app.dark .sidebar hr {
+  border-color: #333;
+}
+.app.dark .sidebar ul li:hover {
+  background-color: #333;
+}
+.app.dark .sidebar ul .icon {
+  color: #999;
+}
+.app.dark .datatable .dataGrid {
+  color: gray;
+  border: none;
+}
+.app.dark .datatable .dataGrid .viewButton,
+.app.dark .datatable .dataGrid .deleteButton {
+  color: gray;
+  border: none;
+}
+.app.dark .datatable .dataGrid .cellWithStatus {
+  background-color: transparent;
+  color: gray;
+}
+.app.dark .datatable .MuiDataGrid-withBorderColor {
+  border-color: rgba(128, 128, 128, 0.324);
+}/*# sourceMappingURL=dark.css.map */

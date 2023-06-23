@@ -13,7 +13,15 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping'
 import InsertChartIcon from '@mui/icons-material/InsertChart'
 import { Link } from 'react-router-dom'
 
+import { useContext} from 'react'
+import { DarkModeContext } from '../../context/darkModeContext'
+
+
+
 const Sidebar = () => {
+
+	const {dispatch} = useContext(DarkModeContext)
+	
 	return (
 		<div className='sidebar'>
 			<Link to='/' style={{ textDecoration: 'none' }}>
@@ -26,10 +34,12 @@ const Sidebar = () => {
 			<div className='center'>
 				<ul>
 					<p className='title'>Main</p>
-					<li>
-						<DashboardIcon className='icon' />
-						<span>Dashboard</span>
-					</li>
+					<Link to='/' style={{ textDecoration: 'none' }}>
+						<li>
+							<DashboardIcon className='icon' />
+							<span>Dashboard</span>
+						</li>
+					</Link>
 
 					<p className='title'>Lists</p>
 					<Link to='/users' style={{ textDecoration: 'none' }}>
@@ -91,8 +101,8 @@ const Sidebar = () => {
 			</div>
 
 			<div className='bottom'>
-				<div className='colorOption'></div>
-				<div className='colorOption'></div>
+				<div className='colorOption' onClick={() => dispatch({type:"LIGHT"})}></div>
+				<div className='colorOption' onClick={() => dispatch({type:"DARK"})}></div>
 			</div>
 		</div>
 	)
